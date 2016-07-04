@@ -5,6 +5,7 @@ var mongodb = require("mongodb");
 var mongoose = require('mongoose');
 //Se declaran todos los accesos de las rutas
 provinceRoutes = require('./api/routes/province.route');
+cantonRoutes = require('./api/routes/canton.route');
 
 var app = express();
 app.use(express.static(__dirname + "/public"));
@@ -53,3 +54,4 @@ function handleError(res, reason, message, code) {
 
 // Conexion a todas la rutas
 app.use('/api', provinceRoutes);
+app.use('/api', cantonRoutes);
