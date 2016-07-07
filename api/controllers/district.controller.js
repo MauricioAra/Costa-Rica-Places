@@ -1,7 +1,7 @@
-//Requerimos el modelo  de cantones
-var Canton = require('../models/canton.model.js');
+//Requerimos el modelo  de distritos
+var Canton = require('../models/district.model.js');
 
-// Modelo que devuelve todos los cantones
+// Modelo que devuelve todos los distritos
 module.exports.getAll = function(req, res){
   Canton.find().then(function(resp) {
     res.send(resp);

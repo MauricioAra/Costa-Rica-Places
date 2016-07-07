@@ -1,4 +1,5 @@
-//Requerimos el modelo  de usuarios
+//Requerimos el modelo  de pronvincias
+
 var Province = require('../models/province.model.js');
 
 // Modelo que devuelve todas las provincias
