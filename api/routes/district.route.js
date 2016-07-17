@@ -11,7 +11,7 @@ router.param('id',function(req, res, next, id){
 //Declaracion de las rutas
 router.route('/districts')
   .get(function(req, res){
-    provinceController.getAll(req, res);
+    districtController.getAll(req, res);
  	});
 
 // Se exporta el modulo
