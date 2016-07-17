@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 
 //Esquema de usuarios
 var DistrictSchema = new mongoose.Schema({
-  idCanton: Number,
+  idDistrito: Number,
   nombre :String,
   Canton_idCanton: Number
 });
